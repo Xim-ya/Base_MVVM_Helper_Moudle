@@ -1,4 +1,3 @@
-import 'package:cupertino_will_pop_scope/cupertino_will_pop_scope.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,21 +10,15 @@ abstract class BaseScreen<T extends GetxController> extends GetView<T> {
       initViewModel();
     }
 
-    return ConditionalWillPopScope(
-      shouldAddCallback: preventSwipeBack,
-      onWillPop: () async {
-        return false;
-      },
-      child: Container(
-        color: unSafeAreaColor,
-        child: wrapWithSafeArea
-            ? SafeArea(
-                top: setTopSafeArea,
-                bottom: setBottomSafeArea,
-                child: _buildScaffold(context),
-              )
-            : _buildScaffold(context),
-      ),
+    return Container(
+      color: unSafeAreaColor,
+      child: wrapWithSafeArea
+          ? SafeArea(
+              top: setTopSafeArea,
+              bottom: setBottomSafeArea,
+              child: _buildScaffold(context),
+            )
+          : _buildScaffold(context),
     );
   }
 
@@ -56,9 +49,6 @@ abstract class BaseScreen<T extends GetxController> extends GetView<T> {
 
   @protected
   bool get extendBodyBehindAppBar => false;
-
-  @protected
-  bool get preventSwipeBack => false;
 
   @protected
   Color? get screenBackgroundColor => Colors.white;

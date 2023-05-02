@@ -1,16 +1,8 @@
-# basescreen_baseviewmodel
+# Creating the Ultimate Base Screen Class based on MVVM Architecture in Flutter: GetX — Part 1
 
-Base Modules in MVVM
+Code Example
 
-## Getting Started
+### Blog
+<a href="https://medium.com/@ximya/creating-the-ultimate-base-screen-class-based-on-mvvm-architecture-in-flutter-getx-part-1-58dada8e4266">Medium</a>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<a href="https://velog.io/@ximya_hf/basescreenonmvvm">Velog</a>

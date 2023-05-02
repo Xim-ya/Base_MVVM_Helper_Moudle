@@ -10,6 +10,9 @@ class SampleScreen extends BaseScreen<SampleViewModel> {
   bool get wrapWithSafeArea => false;
 
   @override
+  Color? get screenBackgroundColor => Colors.amberAccent;
+
+  @override
   Widget? get buildFloatingActionButton => FloatingActionButton(
         onPressed: vm.increaseCount,
         child: const Icon(Icons.plus_one),
